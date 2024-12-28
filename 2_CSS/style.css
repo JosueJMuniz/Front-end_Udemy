@@ -9,3 +9,10 @@ h3 {
     font-size: 35px;
 
 }
+
+/*Estilo usando seletor de classe*/
+.paragraph{
+    font-size: 80px;
+    background-color: black;
+    color: aqua;
+}
