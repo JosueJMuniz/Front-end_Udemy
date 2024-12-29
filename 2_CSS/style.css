@@ -1,18 +1,38 @@
 body {
-    padding-bottom: 500px;
-
+  padding-bottom: 500px;
 }
 
 h3 {
-    color: coral;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-
+  color: coral;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
 }
 
 /*Estilo usando seletor de classe*/
-.paragraph{
-    font-size: 80px;
-    background-color: black;
-    color: aqua;
+.paragraph {
+  font-size: 80px;
+  background-color: black;
+  color: aqua;
+}
+
+#exclusive_id {
+  background-color: purple;
+  color: yellow;
+  padding: 10px;
+  font-size: 40px;
+}
+
+/*Ordem das Regras*/
+
+h2 {
+    border-bottom: 10px solid red;
+}
+
+.titulo {
+    border-bottom: 10px solid blue;
+
+}
+
+#algum-titulo{
+    border-bottom: 10px solid green;
 }

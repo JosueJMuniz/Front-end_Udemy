@@ -7,7 +7,7 @@
     <title>CSS</title>
 
 
-    <!---Internal CSS-->
+    <!--- 01 Internal CSS-->
 
     <style>
         h2 {
@@ -16,32 +16,40 @@
         }
     </style>
 
-    <!---External CSS-->
+    <!--- 02 External CSS-->
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!---Inline CSS-->
+    <!--- 03 Inline CSS-->
     <h1 style="color:red;">Minha estilização em linha</h1>
     <h1>Texto sem estilização</h1>
     <hr>
 
-    <!--Estilização Múltiplas Regras-->
+    <!-- 04 Estilização Múltiplas Regras-->
     <h1>Mudar cor e tamhanho da fonte</h1>
     <p style="color: plum; font-size: 50px; border-bottom: 10px solid purple;">Minha estilização múltipla</p>
     <hr>
-    
-    <!--Estilização com Internal CSS-->
+
+    <!-- 05 Estilização com Internal CSS-->
     <h2>Este texto foi estilizado com Internal CSS</h2>
     <hr>
 
-    <!--Este Titulo foi estilizado com External CSS-->
+    <!-- 06 Este Titulo foi estilizado com External CSS-->
     <h3>Titulo h3 estilizado com External CSS</h3>
 
-    <p class="paragraph">Algun Texto</p>
-    <p class="paragraph">Algum Texto</p>
-    <p class="paragraph">Algum Texto</p>
+    <!-- 07 Estilizado com seletor de classe-->
+    <p class="paragraph">Texto com seletor de Classe</p>
+
+    <!-- 08 Estilizado com seletor ID-->
+    <p id="exclusive_id">Texto com seletor ID</p>
+
+    <!-- 09 Multiplas regars de CSS-->
+    <h2 id="algum-titulo" class="titulo"> Algum Texto</h2>
+    <h2 class="titulo">Algum Texto</h2>
+    <h2>Algum Texto</h2>
+
 </body>
 
 </html>
