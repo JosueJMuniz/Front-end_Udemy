@@ -25,14 +25,55 @@ h3 {
 /*Ordem das Regras*/
 
 h2 {
-    border-bottom: 10px solid red;
+  border-bottom: 10px solid red;
 }
 
 .titulo {
-    border-bottom: 10px solid blue;
-
+  border-bottom: 10px solid blue;
 }
 
-#algum-titulo{
-    border-bottom: 10px solid green;
+#algum-titulo {
+  border-bottom: 10px solid green;
+}
+
+/*Nomes de Cores*/
+
+.color-name {
+  color: crimson;
+}
+
+/*Cores Hexadecimais*/
+
+.hex {
+  color: #55a398;
+}
+
+.hex-2 {
+  color: #0c44ff;
+}
+
+/*Hexadecimal Simplificado*/
+.hex-3 {
+  color: #a5f;
+}
+
+/*  RGB */
+.rgb-1 {
+  color: rgb(190, 23, 34);
+}
+
+.rgba {
+  color: rgba(99, 130, 155, 0.8);
+}
+
+/*Background color*/
+
+.bg {
+  background-color: #000;
+  color: #ffff00;
+}
+
+.bg-2 {
+  background-color: #ffff00;
+  color: #000;
 }
