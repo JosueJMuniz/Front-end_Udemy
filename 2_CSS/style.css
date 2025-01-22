@@ -283,3 +283,201 @@ h3 {
   text-decoration: none;
   font-size: 20px;
 }
+
+/*Text Transform*/
+
+.upper {
+  text-transform: uppercase;
+
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+/* Letter-spacing*/
+
+.spacing {
+  letter-spacing: 3.4px;
+  font-size: 20px;
+}
+
+/*Fontes*/
+
+.serif {
+  font-family: serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy {
+  font-family: fantasy ;
+}
+
+/* Font Style */
+.italico , .oblique {
+  font-size: 23px;
+}
+
+.italico {
+  font-style: italic;
+
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+/* Font Weight*/
+.thin, .bold, .bolder {
+  font-family: Helvetica;
+  font-size: 25px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+/* Display */
+
+.inline-box {
+  width: 50px;
+  height:  50px;
+  background-color: #4f8;
+  display: inline-block;
+}
+.block  {
+  background-color: #05702c;
+  display: block;
+  margin: 10px;
+}
+
+/* Positions Static*/
+
+.static {
+  position: static;
+  background-color: #391;
+  color: white;
+  width: 100px;
+  height: 100px;
+}
+
+/* Positions Relative*/
+.relative {
+  position: relative;
+  background-color: #224;
+  color: white;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 40px;
+}
+
+
+.absolute {
+  position: absolute;
+  background-color: #954;
+  color: white;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  left: 2px;
+
+}
+
+/* Absulute e Relative*/
+
+.relative-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 120px;
+  position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+  width: 50px;
+  height: 50px;
+  background-color: #422;
+  position: absolute;
+
+}
+
+.absolute-1 {
+  top: 10px;
+  left: 10px;
+
+}
+.absolute-2 {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Position Fixed*/
+.fixed {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background-color: #83bbfa;
+  border: 1px solid blue;
+  position: fixed;
+  top: 50px;
+  left: 100px;
+}
+
+
+.sticky {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background-color: #51ff00;
+  border: 1px solid green;
+  position: sticky;
+  top: 60px;
+  left: 300px;
+}
+
+/* Z-Index */
+
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(251, 255, 3);
+  position: absolute;
+
+}
+
+.absolute-3 {
+  top:0;
+  left: 0;
+  z-index: 3;
+}
+
+.absolute-4 {
+  top: 10px;
+  left: 10px;
+  background-color: #246;
+  z-index: 20;
+}
+
+.absolute-5 {
+  top: 40px;
+  left: 40px;
+  background-color: #556;
+  z-index: 1;
+}
