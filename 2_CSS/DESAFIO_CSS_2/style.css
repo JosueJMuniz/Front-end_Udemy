@@ -1,9 +1,0 @@
-.box-model {
-    margin: 5px 10px 15px 20px;
-    padding: 10px;
-    border: ;
-    border-radius: 17px;
-    background-color: #000fff;
-    color: aquamarine;
-    outline: 12px double rgba(0, 255, 255, 0.333);
-}
