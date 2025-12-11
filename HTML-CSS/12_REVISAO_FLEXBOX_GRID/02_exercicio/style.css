@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: lightsalmon;
+
+}
+
+div.item {
+  background-color: aqua;
+  border: 1px solid black;
+  text-align: center;
+} */
+
+/* Empacotamento e controle simplificado de fluxo */
+
+/* div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  background-color: lightsalmon;
+
+} */
+
+/* .container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  background-color: lightsalmon;
+}
+ */
+/* div.item {
+  background-color: aqua;
+  border: 1px solid black;
+  
+} */
+
+/* Flex-flow */
+
+.flex-flow {
+  height: 300px; /* Altura menor */
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 5px;
+  background-color: lightsalmon;
+  padding: 10px;
+}
+
+.item {
+  width: 100px; /* Largura fixa para colunas */
+  padding: 20px 0;
+  border: 1px solid black;
+  text-align: center;
+}
