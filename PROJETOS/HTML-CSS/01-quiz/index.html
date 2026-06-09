@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Quiz Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen active" id="start-screen">
+        <h1>Hora do Quiz!</h1>
+        <p>Teste seus conhecimentos com perguntas desafiadoras!</p>
+        <button id="star-btn">Inicie o Quiz</button>
+      </div>
+
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Perguntas</h2>
+          <div class="info">
+            <p>
+              Question <span id="current-question">1</span> de <span>6</span>
+            </p>
+
+            <p>Score: <span id="score">0</span></p>
+          </div>
+        </div>
+
+        <div id="answers-container" class="answer-container">
+          <!--Perguntas serão inseridas aqui através do nosso código js em algum momento-->
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      
+      <div id="result-screen" class="screen">
+        <h1>Resultado do Quiz</h1>
+        <div class="result-info">
+          <p>
+            Você acertou<span id="final-score">0</span> de
+            <span id="max-score">5</span>
+          </p>
+
+          <div id="result-message">Bom Trabalho</div>
+        </div>
+        <button id="restart-btn">Refaça o Quiz</button>
+      </div>
+    </div>
+  </body>
+</html>
