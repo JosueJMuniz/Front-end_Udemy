@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GERADOR DE QR CODE</title>
+    <!--Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?familyfamily=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Script-->
+    <script src="./js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header id="qr-header">
+        <h1>Gerador de QR Code</h1>
+        <p>Insira uma URL ou texto, para criar um QR Code!</p>
+      </header>
+      <div id="qr-form">
+        <input type="text" id="qr-input" placeholder="Digite a URL ou Texto!"/>
+        <button id="qr-button">Gerar QR Code</button>
+      </div>
+      <div id="qr-code">
+        <img id="qr-image" src="./img/qr-instagram-com.svg" />
+      </div>
+    </div>
+  </body>
+</html>

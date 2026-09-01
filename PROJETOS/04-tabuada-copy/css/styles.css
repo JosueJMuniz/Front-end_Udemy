@@ -1,0 +1,167 @@
+/*
+  RESEST BÁSICO
+  Remove margens/paddings padrão e define box-sizing
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Porque usar border-box*/
+}
+
+/*=========================
+  CORPO DA PÁGINA
+===========================*/
+
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #9ac2fd; /*Fundo cinza claro*/
+  color: #333; /*Texto escuro*/
+  display: flex; /*Flexbox para centralizar*/
+  flex-direction: column; /*Empilha elementos verticalmente*/
+  align-items: center; /*Centraliza Horizontalmente*/
+  justify-content: center; /*Centraliza Verticalmente*/
+  min-height: 100vh; /*Ocupa toda altura da tela*/
+  padding: 20px;
+}
+
+/*===================================
+  TITULO DA PÁGINA
+=====================================*/
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1a1a2a;
+}
+
+/*===================================
+  FORMULÁRIO
+=====================================*/
+
+#multiplication-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /*Sombra suave*/
+  width: 100%;
+  max-width: 596px; /*Largura máxima, RESPOSIVO*/
+  margin-bottom: 30px;
+}
+
+/*==================================
+  CADA GRUPO LABEL + INPUT
+====================================*/
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  font-weight: 600; /*Negrito*/
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-control input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.9s; /* Animação suave no foco*/
+}
+
+/* Efeito quando o input está selecionado*/
+
+.form-control input:focus {
+  outline: none;
+  border-color: #4a90d9;
+}
+
+/* ==============================
+BOTÃO DE SUBMIT
+=================================*/
+
+#multiplication-form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #175394;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#multiplication-form input[type="submit"]:hover {
+  background-color: #63a8ee;
+}
+
+/*===========================
+ÁREA DA TABUADA (RESULTADOS)
+=============================*/
+
+#multiplication-table {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#multiplication-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#multiplication-title span {
+  color: #4a90d9; /* Destaque para o número */
+  font-weight: bold;
+}
+
+/*================================
+  CADA LINHA DA TABUADA
+=================================*/
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Operação à esquerda, resultado à direita*/
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #1c00d581; /* Linha separadora sutil*/
+}
+
+.row:nth-child(even) {
+  background-color: #f8faff;
+}
+
+/* Remove a borda da última linha */
+.row:last-child {
+  border-bottom: none;
+}
+
+/*==============================
+  ELEMENTOS DENTRO DE CADA LINHA
+================================*/
+
+.operation {
+  font-size: 18px;
+  color: #555;
+}
+
+.result {
+  font-size: 20px;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d6a4f; /* Verde escuro para o resultado */
+  background-color: #e8f5e9; /* Fundo verde claro */
+  padding: 4px 12px;
+  border-radius: 20px; /* Cantos arredondados (pill shape) */
+}

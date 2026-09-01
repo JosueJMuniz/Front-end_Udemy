@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/scripts.js" defer></script>
+  <title>Tabuada</title>
+</head>
+<body>
+
+  <h1>Tabuada</h1>
+  <h2>Digite o número e confirme para gerar uma tabuada:</h2>
+  <!--
+    Formulário: agrupa os campos de entrada e o botão.
+    o ID permite selecionar no JS
+  -->
+  <form id="multiplication-form">
+    <!--
+      .form-control: div container para agrupar label+input.
+      Não tem valor semâtico, é apenas organização e CSS
+    -->
+      <div class="form-control">
+        <!--
+          <label for="number"
+          - Descrever o compo.
+          - O atributo "for" aponta para o id do input.
+          - Ao clicar no labrl, o foco vai para o input (acessibilidade).
+        -->
+          <label for="number">Tabuada do:</label>
+          <!--
+          <input type="number"
+          - type=number - teclado númerico no mobile, validação nativa.
+          - id=number - funciona como conexão a <label for="number".
+          - placeholder="3" - exemplo visual que desapararece ao editar
+          -->
+          <input type="number" id="number" placeholder="3"/>
+      </div>
+      <div class="form-control">
+        <label for="multiplicator">Multiplicar até:</label>
+        <!--
+          value="10": valor padrão já preenchido.
+          o usuário de pode mudar se quiser.
+        -->
+          <input type="number" id="multiplicator" placeholder="Digite o número de multiplicações." value="10">
+      </div>
+      <input type="submit" value="Calcular">
+  </form>
+  <!-- CONTAINER DE RESULTADOS
+    - Inicialmente mostrar uma mensagem placeholder
+    - Depois do cálculo, exibir a tabuada completa
+  -->
+  <div id="multiplication-table">
+    <!--
+      Título dinâmico:
+      O <span> está vazio e será preenchido pelo JavaScript com o número escolhido
+      Ex: "Tabuada de número: 5"
+    -->
+    <h2 id="multiplication-title">Tabuada do número: <span></span></h2>    
+
+    <!-- 
+    Container das operações:
+    Aqui serão injetadas as linhas da tabuada via JavaScript.
+    -->
+  </div>
+
+  <div id="multiplication-operations">
+    <!--Texto inicial que some quando a tabuada é gerada -->
+    
+  </div>
+</body>
+</html>
